@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finmill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Modal -->
+    <div class="modal__wrapper overlay-wrapper">
+      <div class="modal">
+        <div class="modal__close">
+          <img src="./images/cancel.svg" alt="cancel" width="10px" height="10px">
+        </div>
+        <h3 class="modal__title h3">Conference registration</h3>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <input class="modal__form-input" type="email" placeholder="Email">
+            <input class="modal__form-input" type="text" placeholder="Name">
+            <button class="btn modal__btn">To register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Social -->
+    <div class="social">
+      <div class="social__row">
+        <a href="https://twitter.com/" class="social__icon">
+          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_90_64)">
+              <path
+                d="M18.2958 3.58372C17.6589 3.86647 16.9744 4.0569 16.256 4.14274C16.9896 3.70346 17.5529 3.00739 17.8176 2.17789C17.1316 2.5847 16.3714 2.88044 15.5621 3.03985C14.9151 2.34956 13.9911 1.91821 12.9697 1.91821C10.6766 1.91821 8.99165 4.05762 9.50955 6.27854C6.55867 6.13067 3.94175 4.7169 2.18969 2.56811C1.25919 4.16438 1.70713 6.25257 3.28824 7.31001C2.70687 7.29126 2.15867 7.13185 1.68044 6.86569C1.64149 8.511 2.82083 10.0503 4.5289 10.3929C4.02903 10.5285 3.48155 10.5602 2.9247 10.4535C3.37624 11.8644 4.68759 12.8908 6.24273 12.9197C4.74962 14.0903 2.86844 14.6133 0.984375 14.3911C2.55611 15.3988 4.42359 15.9867 6.42883 15.9867C13.0231 15.9867 16.7486 10.4174 16.5236 5.42234C17.2175 4.92103 17.8198 4.29566 18.2958 3.58372Z"
+                fill="currentColor" />
+            </g>
+            <defs>
+              <clipPath id="clip0_90_64">
+                <rect width="17.3115" height="17.3115" fill="white" transform="translate(0.984375 0.475586)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/" class="social__icon">
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_90_58)">
+              <path
+                d="M9.64011 2.49477C11.9512 2.49477 12.2253 2.50342 13.1385 2.54526C15.4842 2.65201 16.5798 3.765 16.6866 6.09339C16.7284 7.00585 16.7364 7.27995 16.7364 9.59103C16.7364 11.9028 16.7277 12.1762 16.6866 13.0887C16.5791 15.4149 15.4863 16.53 13.1385 16.6368C12.2253 16.6786 11.9526 16.6873 9.64011 16.6873C7.32903 16.6873 7.05493 16.6786 6.14247 16.6368C3.791 16.5293 2.7011 15.4113 2.59434 13.0879C2.55251 12.1755 2.54385 11.9021 2.54385 9.59031C2.54385 7.27922 2.55323 7.00585 2.59434 6.09267C2.70182 3.765 3.7946 2.65129 6.14247 2.54454C7.05565 2.50342 7.32903 2.49477 9.64011 2.49477ZM9.64011 0.93457C7.28936 0.93457 6.99506 0.944669 6.07178 0.986505C2.92831 1.13077 1.18129 2.8749 1.03703 6.02126C0.994473 6.94526 0.984375 7.23955 0.984375 9.59031C0.984375 11.9411 0.994473 12.2361 1.03631 13.1594C1.18057 16.3028 2.9247 18.0498 6.07106 18.1941C6.99506 18.2359 7.28936 18.246 9.64011 18.246C11.9909 18.246 12.2859 18.2359 13.2092 18.1941C16.3497 18.0498 18.1011 16.3057 18.2432 13.1594C18.2857 12.2361 18.2958 11.9411 18.2958 9.59031C18.2958 7.23955 18.2857 6.94526 18.2439 6.02198C18.1025 2.88139 16.3562 1.13149 13.2099 0.987226C12.2859 0.944669 11.9909 0.93457 9.64011 0.93457V0.93457ZM9.64011 5.14559C7.18549 5.14559 5.19539 7.13568 5.19539 9.59031C5.19539 12.0449 7.18549 14.0357 9.64011 14.0357C12.0947 14.0357 14.0848 12.0456 14.0848 9.59031C14.0848 7.13568 12.0947 5.14559 9.64011 5.14559ZM9.64011 12.4756C8.04673 12.4756 6.75487 11.1844 6.75487 9.59031C6.75487 7.99693 8.04673 6.70506 9.64011 6.70506C11.2335 6.70506 12.5254 7.99693 12.5254 9.59031C12.5254 11.1844 11.2335 12.4756 9.64011 12.4756ZM14.2608 3.93162C13.6867 3.93162 13.2214 4.39686 13.2214 4.97031C13.2214 5.54375 13.6867 6.009 14.2608 6.009C14.8343 6.009 15.2988 5.54375 15.2988 4.97031C15.2988 4.39686 14.8343 3.93162 14.2608 3.93162Z"
+                fill="currentColor" />
+            </g>
+            <defs>
+              <clipPath id="clip0_90_58">
+                <rect width="17.3115" height="17.3115" fill="white" transform="translate(0.984375 0.93457)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="https://discord.com/" class="social__icon">
+          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_90_56)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.7999 0.393555C16.778 0.393555 17.5743 1.18988 17.5743 2.17664V17.705L15.7133 16.0604L14.666 15.091L13.558 14.061L14.0168 15.6623H4.20118C3.22309 15.6623 2.42676 14.8659 2.42676 13.8792V2.17664C2.42676 1.18988 3.22309 0.393555 4.20118 0.393555H15.7999V0.393555ZM12.4588 11.6979C14.3717 11.6374 15.1074 10.3823 15.1074 10.3823C15.1074 7.59513 13.861 5.33598 13.861 5.33598C12.6146 4.40116 11.4287 4.42713 11.4287 4.42713L11.3075 4.56562C12.779 5.01572 13.4628 5.6649 13.4628 5.6649C12.5626 5.17152 11.6797 4.92916 10.8574 4.83395C10.2342 4.7647 9.63699 4.78201 9.10899 4.85126L8.96184 4.86857C8.65889 4.89454 7.92315 5.00706 6.99699 5.41388C6.67672 5.56103 6.4863 5.6649 6.4863 5.6649C6.4863 5.6649 7.20472 4.98109 8.76276 4.531L8.6762 4.42713C8.6762 4.42713 7.49036 4.40116 6.24394 5.33598C6.24394 5.33598 4.99751 7.59513 4.99751 10.3823C4.99751 10.3823 5.72459 11.6374 7.63751 11.6979C7.63751 11.6979 7.95777 11.3084 8.21744 10.9795C7.11817 10.6506 6.70269 9.95814 6.70269 9.95814L6.94505 10.1053L6.97967 10.1313L7.01358 10.1507L7.02367 10.1551L7.05758 10.1745C7.27397 10.2957 7.49036 10.3909 7.68944 10.4688C8.04433 10.6073 8.46846 10.7458 8.96184 10.841C9.61102 10.9622 10.3727 11.0055 11.2037 10.8497C11.6105 10.7804 12.026 10.6593 12.4588 10.4775C12.7617 10.365 13.0993 10.2005 13.4542 9.9668C13.4542 9.9668 13.0214 10.6766 11.8875 10.9968C12.1471 11.3257 12.4588 11.6979 12.4588 11.6979ZM8.43384 7.65572C7.94046 7.65572 7.55095 8.0885 7.55095 8.6165C7.55095 9.1445 7.94912 9.57729 8.43384 9.57729C8.92722 9.57729 9.31672 9.1445 9.31672 8.6165C9.32538 8.0885 8.92722 7.65572 8.43384 7.65572ZM11.5932 7.65572C11.0998 7.65572 10.7103 8.0885 10.7103 8.6165C10.7103 9.1445 11.1085 9.57729 11.5932 9.57729C12.0866 9.57729 12.4761 9.1445 12.4761 8.6165C12.4761 8.0885 12.0866 7.65572 11.5932 7.65572Z"
+                fill="currentColor" />
+            </g>
+            <defs>
+              <clipPath id="clip0_90_56">
+                <rect width="17.3115" height="17.3115" fill="white" transform="translate(0.984375 0.393555)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <header>
+      <!-- Navbar -->
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.svg" alt="logo">
+              </a>
+            </div>
+            <nav>
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="#about" class="menu__item-link" data-scroll>About</a></li>
+                  <li class="menu__item"><a href="#speakers" class="menu__item-link" data-scroll>Speakers</a>
+                  </li>
+                  <li class="menu__item"><a href="#agenda" class="menu__item-link" data-scroll>Agenda</a></li>
+                  <li class="menu__item"><a href="#faq" class="menu__item-link" data-scroll>FAQ</a></li>
+                </ul>
+                <button id="modal__btn" class="btn menu__btn btn modal__btn">Register</button>
+              </div>
+            </nav>
+            <button class="burger">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero__container ">
+        <div class="hero__logo-event">
+          <img src="./images/logo_finmill’21.svg" alt="logo event">
+        </div>
+        <p class="hero__date">June 14, 2021</p>
+        <h1 class="hero__title h1">
+          Fix your broken <span class="text--violet">relationship</span> with
+          <span class="text--green">money</span>
+        </h1>
+        <p class="hero__text">Stop hustling yourself into breakdown and stop wasting time by managing money poorly.
+          Let's
+          stop the grind,
+          together.</p>
+        <button id="modal__btn" class="hero__btn btn">Register for free</button>
+      </div>
+      <div class="hero__left">
+        <img class="hero__left-hand" src="./images/hand-left/hand.png" alt="img">
+        <img class="hero__left-dots" src="./images/hand-left/dots.png" alt="img">
+        <img class="hero__left-bg" src="./images/hand-left/bg.png" alt="img">
+      </div>
+      <div class="hero__right">
+        <img class="hero__right-hand" src="./images/hand-right/hand.png" alt="img">
+        <img class="hero__right-coin1" src="./images/hand-right/coin1.png" alt="img">
+        <img class="hero__right-coin2" src="./images/hand-right/coin2.png" alt="img">
+        <img class="hero__right-coin3" src="./images/hand-right/coin3.png" alt="img">
+        <img class="hero__right-cart" src="./images/hand-right/creditCart.png" alt="img">
+        <img class="hero__right-dots" src="./images/hand-right/dots.png" alt="img">
+        <img class="hero__right-bg" src="./images/hand-right/bg.png" alt="img">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__container">
+          <div class="about__img">
+            <img src="./images/about-icon.png" alt="illustration">
+          </div>
+          <div class="about__item">
+            <h2 class="about__title h2">The financial system is broken.</h2>
+            <p class="about__text">The responsibility to make the right financial decisions unfairly rests on our own
+              shoulders.
+              We are a platform empowering millenials to manage their money through content, events, and community.
+            </p>
+            <a class="btn btn--green about__btn" href="#">Read Our Blog</a>
+          </div>
+
+          <div class="about__item">
+            <h3 class="about__title h3">About</h3>
+            <div class="about__logo-event">
+              <img src="./images/logo_finmill’21.svg" alt="logo event">
+            </div>
+            <p class="about__text">A annual virtual workshop on personal finance for millenials, breaking down the
+              jargons
+              and give you actionable advice to manage your money.
+              This year, it’ll take place virtually.</p>
+            <div class="about__event">
+              <div class="about__event-title">Event starts in</div>
+              <div class="about__event-timer"><span>12</span> Days : <span>01</span> Hrs : <span>24</span>Secs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="control-money">
+      <div class="container">
+        <h2 class="control-money__title h2">
+          You're <span class="text--violet">taking over the world,</span>
+          don't forget to <span class="text--green"> take control of your money</span>.
+        </h2>
+        <div class="control-money__text">Managing your money can be tricky, but we make it actionable and
+          approachable. It all comes down to doing four key things, and they’re not that hard</div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="control-money__slide">
+                <div class="control-money__slide-content">
+                  <h3 class="control-money__slide-title h3">Spend well</h3>
+                  <p class="control-money__slide-text">
+                    Spending money isn’t a bad thing—as long as you’re spending on the stuff you really care about, and
+                    balancing it with your goals.
+                  </p>
+                </div>
+                <div class="control-money__slide-img">
+                  <img src="./images/illustration-spend.png" alt="img">
+                </div>
+                <a class="control-money__btn btn btn--green" href="#">Learn More</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="control-money__slide">
+                <div class="control-money__slide-content">
+                  <h3 class="control-money__slide-title h3">Save money</h3>
+                  <div class="control-money__slide-text">
+                    Spending money isn’t a bad thing—as long as you’re spending on the stuff you really care about, and
+                    balancing it with your goals.
+                  </div>
+                </div>
+                <div class="control-money__slide-img control-money__slide-img--2">
+                  <img src="./images/illustration-save.png" alt="img">
+                </div>
+                <a class="control-money__btn btn btn--green" href="#">Learn More</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="control-money__slide">
+                <div class="control-money__slide-content">
+                  <h3 class="control-money__slide-title h3">Invest right</h3>
+                  <div class="control-money__slide-text">
+                    Spending money isn’t a bad thing—as long as you’re spending on the stuff you really care about, and
+                    balancing it with your goals.
+                  </div>
+                </div>
+                <div class="control-money__slide-img control-money__slide-img--3">
+                  <img src="./images/illustration-invest.png" alt="img">
+                </div>
+                <a class="control-money__btn btn btn--green" href="#">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination control-money__pagination">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="speakers" class="speakers">
+      <div class="container">
+        <h2 class="speakers__title h2">Meet our speakers</h2>
+        <div class="speakers__row">
+          <div class="speakers__item">
+            <div class="speakers__item-img">
+              <div class="speakers__item-icons">
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    <g clip-path="url(#clip0_210_403)">
+                      <path
+                        d="M38.1181 14.9518C37.0793 15.413 35.9628 15.7236 34.791 15.8636C35.9875 15.1471 36.9063 14.0118 37.3381 12.6589C36.2193 13.3224 34.9793 13.8048 33.6593 14.0648C32.604 12.9389 31.0969 12.2354 29.431 12.2354C25.691 12.2354 22.9428 15.7248 23.7875 19.3471C18.9746 19.1059 14.7063 16.8001 11.8487 13.2954C10.331 15.8989 11.0616 19.3048 13.6405 21.0295C12.6922 20.9989 11.7981 20.7389 11.0181 20.3048C10.9546 22.9883 12.8781 25.4989 15.664 26.0577C14.8487 26.2789 13.9558 26.3306 13.0475 26.1565C13.784 28.4577 15.9228 30.1318 18.4593 30.1789C16.024 32.0883 12.9558 32.9412 9.88281 32.5789C12.4463 34.2224 15.4922 35.1812 18.7628 35.1812C29.5181 35.1812 35.5946 26.0977 35.2275 17.9506C36.3593 17.133 37.3416 16.113 38.1181 14.9518Z"
+                        fill="#FFFAF6" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_210_403">
+                        <rect width="28.2353" height="28.2353" fill="white" transform="translate(9.88281 9.88232)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode:darken">
+                      <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    </g>
+                    <g clip-path="url(#clip0_210_390)">
+                      <path
+                        d="M24.0005 12.427C27.7699 12.427 28.2169 12.4411 29.7063 12.5094C33.5322 12.6835 35.3193 14.4988 35.4934 18.2964C35.5616 19.7847 35.5746 20.2317 35.5746 24.0011C35.5746 27.7717 35.5605 28.2176 35.4934 29.7059C35.3181 33.5 33.5358 35.3188 29.7063 35.4929C28.2169 35.5611 27.7722 35.5753 24.0005 35.5753C20.231 35.5753 19.784 35.5611 18.2958 35.4929C14.4605 35.3176 12.6828 33.4941 12.5087 29.7047C12.4405 28.2164 12.4263 27.7706 12.4263 24C12.4263 20.2306 12.4416 19.7847 12.5087 18.2953C12.684 14.4988 14.4663 12.6823 18.2958 12.5082C19.7852 12.4411 20.231 12.427 24.0005 12.427ZM24.0005 9.88232C20.1663 9.88232 19.6863 9.89879 18.1805 9.96703C13.0534 10.2023 10.204 13.047 9.96869 18.1788C9.89928 19.6859 9.88281 20.1659 9.88281 24C9.88281 27.8341 9.89928 28.3153 9.96752 29.8211C10.2028 34.9482 13.0475 37.7976 18.1793 38.0329C19.6863 38.1011 20.1663 38.1176 24.0005 38.1176C27.8346 38.1176 28.3158 38.1011 29.8216 38.0329C34.944 37.7976 37.8005 34.9529 38.0322 29.8211C38.1016 28.3153 38.1181 27.8341 38.1181 24C38.1181 20.1659 38.1016 19.6859 38.0334 18.18C37.8028 13.0576 34.9546 10.2035 29.8228 9.96821C28.3158 9.89879 27.8346 9.88232 24.0005 9.88232V9.88232ZM24.0005 16.7506C19.9969 16.7506 16.751 19.9964 16.751 24C16.751 28.0035 19.9969 31.2506 24.0005 31.2506C28.004 31.2506 31.2499 28.0047 31.2499 24C31.2499 19.9964 28.004 16.7506 24.0005 16.7506ZM24.0005 28.7059C21.4016 28.7059 19.2946 26.6 19.2946 24C19.2946 21.4011 21.4016 19.2941 24.0005 19.2941C26.5993 19.2941 28.7063 21.4011 28.7063 24C28.7063 26.6 26.5993 28.7059 24.0005 28.7059ZM31.5369 14.7706C30.6005 14.7706 29.8416 15.5294 29.8416 16.4647C29.8416 17.4 30.6005 18.1588 31.5369 18.1588C32.4722 18.1588 33.2299 17.4 33.2299 16.4647C33.2299 15.5294 32.4722 14.7706 31.5369 14.7706Z"
+                        fill="#FFFAF6" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_210_390">
+                        <rect width="28.2353" height="28.2353" fill="white" transform="translate(9.88281 9.88232)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    <path
+                      d="M37.5336 16.9821C37.3766 16.3549 37.0569 15.7801 36.6067 15.316C36.1565 14.8519 35.5918 14.5148 34.9696 14.3388C32.6964 13.7837 23.6034 13.7837 23.6034 13.7837C23.6034 13.7837 14.5104 13.7837 12.2372 14.3917C11.615 14.5677 11.0503 14.9048 10.6001 15.3689C10.1499 15.833 9.83017 16.4077 9.67317 17.035C9.25713 19.342 9.05363 21.6823 9.06521 24.0265C9.05038 26.3884 9.2539 28.7465 9.67317 31.0709C9.84625 31.6787 10.1732 32.2315 10.6223 32.6761C11.0715 33.1206 11.6277 33.4417 12.2372 33.6085C14.5104 34.2165 23.6034 34.2165 23.6034 34.2165C23.6034 34.2165 32.6964 34.2165 34.9696 33.6085C35.5918 33.4325 36.1565 33.0954 36.6067 32.6313C37.0569 32.1671 37.3766 31.5924 37.5336 30.9652C37.9465 28.6755 38.15 26.3531 38.1416 24.0265C38.1564 21.6647 37.9529 19.3065 37.5336 16.9821V16.9821Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20.6289 28.3487L28.2284 24.0269L20.6289 19.7051V28.3487Z" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+
+              </div>
+              <div class="speakers__item-photo">
+                <img src="./images/speakers-1.png" alt="img">
+              </div>
+            </div>
+            <h3 class="speakers__item-title h3">Ali Abdaal</h3>
+            <p class="speakers__item-position">Youtuber</p>
+          </div>
+
+          <div class="speakers__item">
+            <div class="speakers__item-img">
+              <div class="speakers__item-icons">
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    <g clip-path="url(#clip0_210_403)">
+                      <path
+                        d="M38.1181 14.9518C37.0793 15.413 35.9628 15.7236 34.791 15.8636C35.9875 15.1471 36.9063 14.0118 37.3381 12.6589C36.2193 13.3224 34.9793 13.8048 33.6593 14.0648C32.604 12.9389 31.0969 12.2354 29.431 12.2354C25.691 12.2354 22.9428 15.7248 23.7875 19.3471C18.9746 19.1059 14.7063 16.8001 11.8487 13.2954C10.331 15.8989 11.0616 19.3048 13.6405 21.0295C12.6922 20.9989 11.7981 20.7389 11.0181 20.3048C10.9546 22.9883 12.8781 25.4989 15.664 26.0577C14.8487 26.2789 13.9558 26.3306 13.0475 26.1565C13.784 28.4577 15.9228 30.1318 18.4593 30.1789C16.024 32.0883 12.9558 32.9412 9.88281 32.5789C12.4463 34.2224 15.4922 35.1812 18.7628 35.1812C29.5181 35.1812 35.5946 26.0977 35.2275 17.9506C36.3593 17.133 37.3416 16.113 38.1181 14.9518Z"
+                        fill="#FFFAF6" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_210_403">
+                        <rect width="28.2353" height="28.2353" fill="white" transform="translate(9.88281 9.88232)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode:darken">
+                      <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    </g>
+                    <g clip-path="url(#clip0_210_417)">
+                      <path
+                        d="M33.9951 33.9999V33.999H34.0001V26.664C34.0001 23.0757 33.2276 20.3115 29.0326 20.3115C27.0159 20.3115 25.6626 21.4182 25.1101 22.4674H25.0517V20.6465H21.0742V33.999H25.2159V27.3874C25.2159 25.6465 25.5459 23.9632 27.7017 23.9632C29.8259 23.9632 29.8576 25.9499 29.8576 27.499V33.9999H33.9951Z"
+                        fill="#FFFAF6" />
+                      <path d="M14.3301 20.6475H18.4767V34H14.3301V20.6475Z" fill="#FFFAF6" />
+                      <path
+                        d="M16.4017 14C15.0758 14 14 15.0758 14 16.4017C14 17.7275 15.0758 18.8258 16.4017 18.8258C17.7275 18.8258 18.8033 17.7275 18.8033 16.4017C18.8025 15.0758 17.7267 14 16.4017 14V14Z"
+                        fill="#FFFAF6" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_210_417">
+                        <rect width="20" height="20" fill="white" transform="translate(14 14)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+
+              </div>
+              <div class="speakers__item-photo">
+                <img src="./images/speakers-2.png" alt="img">
+              </div>
+            </div>
+            <h3 class="speakers__item-title h3">Kunal Shah</h3>
+            <p class="speakers__item-position">Founder, CRED</p>
+          </div>
+
+          <div class="speakers__item">
+            <div class="speakers__item-img">
+              <div class="speakers__item-icons">
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    <g clip-path="url(#clip0_210_403)">
+                      <path
+                        d="M38.1181 14.9518C37.0793 15.413 35.9628 15.7236 34.791 15.8636C35.9875 15.1471 36.9063 14.0118 37.3381 12.6589C36.2193 13.3224 34.9793 13.8048 33.6593 14.0648C32.604 12.9389 31.0969 12.2354 29.431 12.2354C25.691 12.2354 22.9428 15.7248 23.7875 19.3471C18.9746 19.1059 14.7063 16.8001 11.8487 13.2954C10.331 15.8989 11.0616 19.3048 13.6405 21.0295C12.6922 20.9989 11.7981 20.7389 11.0181 20.3048C10.9546 22.9883 12.8781 25.4989 15.664 26.0577C14.8487 26.2789 13.9558 26.3306 13.0475 26.1565C13.784 28.4577 15.9228 30.1318 18.4593 30.1789C16.024 32.0883 12.9558 32.9412 9.88281 32.5789C12.4463 34.2224 15.4922 35.1812 18.7628 35.1812C29.5181 35.1812 35.5946 26.0977 35.2275 17.9506C36.3593 17.133 37.3416 16.113 38.1181 14.9518Z"
+                        fill="#FFFAF6" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_210_403">
+                        <rect width="28.2353" height="28.2353" fill="white" transform="translate(9.88281 9.88232)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode:darken">
+                      <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    </g>
+                    <g clip-path="url(#clip0_210_390)">
+                      <path
+                        d="M24.0005 12.427C27.7699 12.427 28.2169 12.4411 29.7063 12.5094C33.5322 12.6835 35.3193 14.4988 35.4934 18.2964C35.5616 19.7847 35.5746 20.2317 35.5746 24.0011C35.5746 27.7717 35.5605 28.2176 35.4934 29.7059C35.3181 33.5 33.5358 35.3188 29.7063 35.4929C28.2169 35.5611 27.7722 35.5753 24.0005 35.5753C20.231 35.5753 19.784 35.5611 18.2958 35.4929C14.4605 35.3176 12.6828 33.4941 12.5087 29.7047C12.4405 28.2164 12.4263 27.7706 12.4263 24C12.4263 20.2306 12.4416 19.7847 12.5087 18.2953C12.684 14.4988 14.4663 12.6823 18.2958 12.5082C19.7852 12.4411 20.231 12.427 24.0005 12.427ZM24.0005 9.88232C20.1663 9.88232 19.6863 9.89879 18.1805 9.96703C13.0534 10.2023 10.204 13.047 9.96869 18.1788C9.89928 19.6859 9.88281 20.1659 9.88281 24C9.88281 27.8341 9.89928 28.3153 9.96752 29.8211C10.2028 34.9482 13.0475 37.7976 18.1793 38.0329C19.6863 38.1011 20.1663 38.1176 24.0005 38.1176C27.8346 38.1176 28.3158 38.1011 29.8216 38.0329C34.944 37.7976 37.8005 34.9529 38.0322 29.8211C38.1016 28.3153 38.1181 27.8341 38.1181 24C38.1181 20.1659 38.1016 19.6859 38.0334 18.18C37.8028 13.0576 34.9546 10.2035 29.8228 9.96821C28.3158 9.89879 27.8346 9.88232 24.0005 9.88232V9.88232ZM24.0005 16.7506C19.9969 16.7506 16.751 19.9964 16.751 24C16.751 28.0035 19.9969 31.2506 24.0005 31.2506C28.004 31.2506 31.2499 28.0047 31.2499 24C31.2499 19.9964 28.004 16.7506 24.0005 16.7506ZM24.0005 28.7059C21.4016 28.7059 19.2946 26.6 19.2946 24C19.2946 21.4011 21.4016 19.2941 24.0005 19.2941C26.5993 19.2941 28.7063 21.4011 28.7063 24C28.7063 26.6 26.5993 28.7059 24.0005 28.7059ZM31.5369 14.7706C30.6005 14.7706 29.8416 15.5294 29.8416 16.4647C29.8416 17.4 30.6005 18.1588 31.5369 18.1588C32.4722 18.1588 33.2299 17.4 33.2299 16.4647C33.2299 15.5294 32.4722 14.7706 31.5369 14.7706Z"
+                        fill="#FFFAF6" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_210_390">
+                        <rect width="28.2353" height="28.2353" fill="white" transform="translate(9.88281 9.88232)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+
+                <a class="speakers__item-icon" href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="currentColor" />
+                    <path
+                      d="M37.5336 16.9821C37.3766 16.3549 37.0569 15.7801 36.6067 15.316C36.1565 14.8519 35.5918 14.5148 34.9696 14.3388C32.6964 13.7837 23.6034 13.7837 23.6034 13.7837C23.6034 13.7837 14.5104 13.7837 12.2372 14.3917C11.615 14.5677 11.0503 14.9048 10.6001 15.3689C10.1499 15.833 9.83017 16.4077 9.67317 17.035C9.25713 19.342 9.05363 21.6823 9.06521 24.0265C9.05038 26.3884 9.2539 28.7465 9.67317 31.0709C9.84625 31.6787 10.1732 32.2315 10.6223 32.6761C11.0715 33.1206 11.6277 33.4417 12.2372 33.6085C14.5104 34.2165 23.6034 34.2165 23.6034 34.2165C23.6034 34.2165 32.6964 34.2165 34.9696 33.6085C35.5918 33.4325 36.1565 33.0954 36.6067 32.6313C37.0569 32.1671 37.3766 31.5924 37.5336 30.9652C37.9465 28.6755 38.15 26.3531 38.1416 24.0265C38.1564 21.6647 37.9529 19.3065 37.5336 16.9821V16.9821Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20.6289 28.3487L28.2284 24.0269L20.6289 19.7051V28.3487Z" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+
+              </div>
+              <div class="speakers__item-photo">
+                <img src="./images/speakers-3.png" alt="img">
+              </div>
+            </div>
+            <h3 class="speakers__item-title h3">Rachana Ranade</h3>
+            <p class="speakers__item-position">Educator & Youtuber</p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <section id="agenda" class="workshop">
+      <div class="workshop__bg-icon">
+        <img src="./images/workshop-icon.png" alt="img">
+      </div>
+      <div class="container">
+        <div class="workshop__container">
+          <h2 class="workshop__title h2">Workshop Agenda</h2>
+
+          <div class="workshop__row">
+            <div class="workshop__item">
+              <div class="workshop__content">
+                <h5 class="workshop__item-title h5">Kick Off</h5>
+              </div>
+              <p class="workshop__date">10:30 AM - 11:00 AM</p>
+            </div>
+            <div class="workshop__item">
+              <div class="workshop__content">
+                <h5 class="workshop__item-title h5">Living Frugal Yet Fulfilled</h5>
+                <p class="workshop__item-text"><b>Ali Abdaal</b></p>
+              </div>
+              <p class="workshop__date">11:00 AM - 11:30 AM</p>
+            </div>
+
+            <div class="workshop__item">
+              <div class="workshop__content">
+                <h5 class="workshop__item-title h5">Back to Basics</h5>
+                <p class="workshop__item-text"><b>Kunal Shah</b></p>
+              </div>
+              <p class="workshop__date">11:30 AM - 12:00 AM</p>
+            </div>
+
+            <div class="workshop__item">
+              <div class="workshop__content">
+                <h5 class="workshop__item-title h5">Breakout Sessions</h5>
+              </div>
+              <p class="workshop__date">12:00 AM - 12:30 AM</p>
+            </div>
+
+            <div class="workshop__item">
+              <div class="workshop__content">
+                <h5 class="workshop__item-title h5">Art of Investing</h5>
+                <p class="workshop__item-text"><b>Rachana Ranade</b></p>
+              </div>
+              <p class="workshop__date">12:30 PM - 1:00 PM</p>
+            </div>
+
+            <div class="workshop__item">
+              <div class="workshop__content">
+                <h5 class="workshop__item-title h5">Wrap Up </h5>
+                <p class="workshop__item-text"><b>Ali Abdaal, Kunal Shah, Rachana Ranade</b></p>
+              </div>
+              <p class="workshop__date">1:00 PM - 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="previous">
+      <div class="container">
+        <h2 class="previous__title h2">Previous Editions</h2>
+        <p class="previous__text">The innaugural finmill workshop
+          took place on <b>June 14, 2020.</b>
+          <b>5 incredible speakers</b> and <b>1200+ people</b> signed up to tell stories and learn how to become better
+          investors,
+          stronger negotiators, and overall more educated financial decision-makers.
+        </p>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper-previous">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="previous__slide">
+                <p class="previous__slide-text">
+                  Finmill empowered me to take the first step of setting up my finances after I
+                  started my first job after college and feel more confident about creating a path to financial
+                  independence that worked for my lifestyle.
+                </p>
+                <div class="previous__slide-person">
+                  <div class="previous__slide-avatar">
+                    <img src="./images/avatar-1.png" alt="img">
+                  </div>
+                  <div class="previous__slide-descr">
+                    <p class="previous__slide-name">Deepika</p>
+                    <p class="previous__slide-position">Ex. Chief Broke Officer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="previous__slide">
+                <p class="previous__slide-text">
+                  Finmill empowered me to take the first step of setting up my finances after I started my first job
+                  after college and feel more confident about creating a path to financial independence that worked for
+                  my lifestyle.
+                </p>
+                <div class="previous__slide-person">
+                  <div class="previous__slide-avatar">
+                    <img src="./images/avatar-2.png" alt="img">
+                  </div>
+                  <div class="previous__slide-descr">
+                    <p class="previous__slide-name">Shiv Nadar</p>
+                    <p class="previous__slide-position">Ex. Pro Procastinator</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="previous__slide">
+                <p class="previous__slide-text">
+                  Such an eye opener! The stock market isn't as scary as I thought. Finmill encouraged me to make some
+                  first time investments!
+                </p>
+                <div class="previous__slide-person">
+                  <div class="previous__slide-avatar">
+                    <img src="./images/avatar-3.png" alt="img">
+                  </div>
+                  <div class="previous__slide-descr">
+                    <p class="previous__slide-name">Shahrukh</p>
+                    <p class="previous__slide-position">Ex. StockMarketphobe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="faq">
+      <div class="faq__img-left">
+        <img src="./images/faq-left.png" alt="">
+      </div>
+      <div class="faq__img-right">
+        <img src="./images/faq-right.png" alt="">
+      </div>
+      <div class="container">
+        <div class="faq__container">
+          <h2 class="faq__title h2">Frequently Asked Questions</h2>
+
+          <!-- Accordion -->
+          <div class="accordion">
+
+            <div class="accordion__item">
+              <div class="accordion__item-trigger">
+                <h4 class="accordion__item-title h4">Why is this free?</h4>
+                <div class="accordion__img">
+                  <img src="./images/arrow-down.svg" alt="arrow icon">
+                </div>
+              </div>
+              <div class="accordion__content">
+                <p class="accordion__text">Our mission is to break down the jargon and educate millenials with
+                  conversations about money and we feel charging our attendees contradicts that mission</p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <div class="accordion__item-trigger">
+                <h4 class="accordion__item-title h4">Do I need to attend every session?</h4>
+                <div class="accordion__img">
+                  <img src="./images/arrow-down.svg" alt="arrow icon">
+                </div>
+              </div>
+              <div class="accordion__content">
+                <p class="accordion__text">Not at all. Feel free to join in according to your schedule</p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <div class="accordion__item-trigger">
+                <h4 class="accordion__item-title h4">Will replays be available if I miss the sessions?</h4>
+                <div class="accordion__img">
+                  <img src="./images/arrow-down.svg" alt="arrow icon">
+                </div>
+              </div>
+              <div class="accordion__content">
+                <p class="accordion__text">Select talks will be recorded and made available for replay</p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <div class="accordion__item-trigger">
+                <h4 class="accordion__item-title h4">What is expected of me?</h4>
+                <div class="accordion__img">
+                  <img src="./images/arrow-down.svg" alt="arrow icon">
+                </div>
+              </div>
+              <div class="accordion__content">
+                <p class="accordion__text">We have a Code Conduct that applies to all Figma Comunity spaces, both
+                  online and off. We expect all finmill attendees to adhere to the same</p>
+              </div>
+            </div>
+
+
+            <div class="accordion__item">
+              <div class="accordion__item-trigger">
+                <h4 class="accordion__item-title h4">WHow do I join the day of the event?</h4>
+                <div class="accordion__img">
+                  <img src="./images/arrow-down.svg" alt="arrow icon">
+                </div>
+              </div>
+              <div class="accordion__content">
+                <p class="accordion__text">Finmill will be held online events on Zoom. We will emiling you the
+                  complete schedule with the respective zoom links to join before the event day</p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+    </section>
+
+    <section class="our-partners">
+      <div class="container">
+        <h2 class="our-partners__title h2">Our Partners</h2>
+        <div class="our-patners__row">
+          <img class="our-patners__logo-cred" src="./images/logo-cred.svg" alt="logo cred">
+          <img class="our-patners__logo-fi" src="./images/logo-fi.svg" alt="logo fi">
+          <img class="our-patners__logo-zerodha" src="./images/logo-zerodha.svg" alt="logo zerodha">
+          <img class="our-patners__logo-money" src="./images/logo-ind-money.svg" alt="logo ind money">
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="cta__left-img">
+        <img src="./images/cta-left.png" alt="icon">
+      </div>
+      <div class="cta__bottom-img">
+        <img src="./images/cta-bottom.png" alt="icon">
+      </div>
+      <div class="container">
+        <h2 class="cta__title h2">If you are here,
+          you have already
+          taken the first step!</h2>
+        <p class="cta__text">Get ready to make some money moves.</p>
+        <button id="modal__btn" class="btn cta__btn">Register for free</button>
+      </div>
+    </section>
+
+
+    <section class="subscribe">
+      <div class="container">
+        <h2 class="subscribe__title h2">
+          You and your money deserves some love!
+        </h2>
+        <p class="subscribe__text">
+          Helping you take action on your financial journey. Take the first step towards owning your money by signing up
+          for our newsletter.
+        </p>
+        <form class="subscribe__form">
+          <input class="subscribe__input" type="email" placeholder="Enter your email address">
+          <button class="subscribe__btn btn btn--green">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <img src="./images/logo-footer.svg" alt="logo">
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">About Us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="footer__copy">
+          Copyright © 2021. finmil. All rights reserved.
+        </div>
+
+        <ul class="footer__icon">
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" href="#">
+              <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.99654 4.04127H11.0059V0.541705C10.6592 0.494017 9.467 0.386719 8.07854 0.386719C5.18149 0.386719 3.19693 2.20895 3.19693 5.55812V8.64042H0V12.5527H3.19693V22.3966H7.11653V12.5536H10.1842L10.6711 8.64134H7.11561V5.94605C7.11653 4.81529 7.421 4.04127 8.99654 4.04127V4.04127Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" href="#">
+              <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M27.657 2.99447C26.6488 3.43672 25.5745 3.72986 24.4545 3.87219C25.6067 3.18425 26.4862 2.10319 26.8996 0.800163C25.8253 1.44066 24.6392 1.89308 23.3752 2.14555C22.3551 1.05941 20.9013 0.386719 19.3153 0.386719C16.2382 0.386719 13.7609 2.88433 13.7609 5.94619C13.7609 6.38675 13.7982 6.81036 13.8897 7.21364C9.2689 6.98828 5.18021 4.77364 2.43351 1.4C1.95398 2.23197 1.6727 3.18425 1.6727 4.20939C1.6727 6.13428 2.66395 7.84058 4.14151 8.82844C3.24854 8.8115 2.37251 8.55225 1.63034 8.14389C1.63034 8.16083 1.63034 8.18286 1.63034 8.20489C1.63034 10.9058 3.55693 13.1493 6.08334 13.6661C5.63093 13.7898 5.13784 13.8491 4.62612 13.8491C4.27029 13.8491 3.91107 13.8287 3.57387 13.7542C4.29401 15.9553 6.33751 17.5735 8.76734 17.626C6.87634 19.1053 4.47532 19.9965 1.87604 19.9965C1.42023 19.9965 0.983065 19.9762 0.545898 19.9203C3.00793 21.508 5.92576 22.4145 9.07235 22.4145C19.3 22.4145 24.8917 13.9423 24.8917 6.59855C24.8917 6.35286 24.8832 6.11564 24.8713 5.88011C25.9744 5.09728 26.9013 4.11958 27.657 2.99447Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" href="#">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.65936 0.386719H15.9775C19.8053 0.386719 22.9094 3.49079 22.9094 7.31854V15.6367C22.9094 19.4645 19.8053 22.5685 15.9775 22.5685H7.65936C3.83161 22.5685 0.727539 19.4645 0.727539 15.6367V7.31854C0.727539 3.49079 3.83161 0.386719 7.65936 0.386719ZM15.9776 20.4889C18.6533 20.4889 20.8298 18.3123 20.8298 15.6366V7.31843C20.8298 4.64275 18.6533 2.46615 15.9776 2.46615H7.65938C4.9837 2.46615 2.80711 4.64275 2.80711 7.31843V15.6366C2.80711 18.3123 4.9837 20.4889 7.65938 20.4889H15.9776Z"
+                  fill="currentColor" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.27344 11.4771C6.27344 8.41462 8.75642 5.93164 11.8189 5.93164C14.8814 5.93164 17.3644 8.41462 17.3644 11.4771C17.3644 14.5396 14.8814 17.0226 11.8189 17.0226C8.75642 17.0226 6.27344 14.5396 6.27344 11.4771ZM8.35305 11.477C8.35305 13.3874 9.90855 14.9429 11.819 14.9429C13.7294 14.9429 15.2849 13.3874 15.2849 11.477C15.2849 9.56524 13.7294 8.01112 11.819 8.01112C9.90855 8.01112 8.35305 9.56524 8.35305 11.477Z"
+                  fill="currentColor" />
+                <circle cx="17.7799" cy="5.51628" r="0.738932" fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" href="#">
+              <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.9033 0C20.2593 0 21.3633 1.104 21.3633 2.472V24L18.7833 21.72L17.3313 20.376L15.7953 18.948L16.4313 21.168H2.82328C1.46728 21.168 0.363281 20.064 0.363281 18.696V2.472C0.363281 1.104 1.46728 0 2.82328 0H18.9033V0ZM14.2713 15.672C16.9233 15.588 17.9433 13.848 17.9433 13.848C17.9433 9.984 16.2153 6.852 16.2153 6.852C14.4873 5.556 12.8433 5.592 12.8433 5.592L12.6753 5.784C14.7153 6.408 15.6633 7.308 15.6633 7.308C14.4153 6.624 13.1913 6.288 12.0513 6.156C11.1873 6.06 10.3593 6.084 9.62728 6.18L9.42328 6.204C9.00328 6.24 7.98328 6.396 6.69928 6.96C6.25528 7.164 5.99128 7.308 5.99128 7.308C5.99128 7.308 6.98728 6.36 9.14728 5.736L9.02728 5.592C9.02728 5.592 7.38328 5.556 5.65528 6.852C5.65528 6.852 3.92728 9.984 3.92728 13.848C3.92728 13.848 4.93528 15.588 7.58728 15.672C7.58728 15.672 8.03128 15.132 8.39128 14.676C6.86728 14.22 6.29128 13.26 6.29128 13.26L6.62728 13.464L6.67528 13.5L6.72228 13.527L6.73628 13.533L6.78328 13.56C7.08328 13.728 7.38328 13.86 7.65928 13.968C8.15128 14.16 8.73928 14.352 9.42328 14.484C10.3233 14.652 11.3793 14.712 12.5313 14.496C13.0953 14.4 13.6713 14.232 14.2713 13.98C14.6913 13.824 15.1593 13.596 15.6513 13.272C15.6513 13.272 15.0513 14.256 13.4793 14.7C13.8393 15.156 14.2713 15.672 14.2713 15.672V15.672ZM8.69128 10.068C8.00728 10.068 7.46728 10.668 7.46728 11.4C7.46728 12.132 8.01928 12.732 8.69128 12.732C9.37528 12.732 9.91528 12.132 9.91528 11.4C9.92728 10.668 9.37528 10.068 8.69128 10.068ZM13.0713 10.068C12.3873 10.068 11.8473 10.668 11.8473 11.4C11.8473 12.132 12.3993 12.732 13.0713 12.732C13.7553 12.732 14.2953 12.132 14.2953 11.4C14.2953 10.668 13.7553 10.068 13.0713 10.068Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
